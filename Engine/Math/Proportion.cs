@@ -8,24 +8,24 @@ namespace Engine.Math
 		{
 			decimal x = (b * c) / d;
 			return x;
-		};
+		}
 		
 		public decimal CalculateB(decimal a, decimal c, decimal d)
 		{
 			decimal x = (a * d) / c;
 			return x;
-		};
+		}
 		
 		public decimal CalculateC(decimal a, decimal b, decimal d)	
 		{
 			decimal x = (a * d) / b;
 			return x;
-		};		
+		}	
 		
 		public decimal CalculateD(decimal a, decimal b, decimal c)	
 		{
 			decimal x = (b * c) / a;
 			return x;
-		};	
+		}
 	}
 }
