@@ -19,3 +19,6 @@
 # Inicialización de subsistemas (Video, Events y Timer)
 # Game loop: Eventos, Actualización, Renderizado
 # Finalización (Liberación de recursos)
+#
+# Agregadas carpetas Engine y Game para separar la lógica de cada uno.
+# Agregada carpeta Math. Ahí mismo empezaré a programar.
