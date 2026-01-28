@@ -1,0 +1,21 @@
+# Este es el inicio de mi propio motor gráfico en 2D.
+# Herramientas a utilizar:
+# > C#/.net 8.0
+# > SDL2-CS como librería de gráficos y sonidos.
+# > Geany IDE
+#
+# Lo primero que busco hacer es implementar cada concepto matemático que vaya aprendiendo.
+# Luego, buscaré integrar esos conceptos de forma gráfica.
+# 
+# --- Comenzamos ... ---
+#
+# Instalación de SDL2-CS.
+#
+# dotnet add package SDL2-CS
+# Dependencia en linux: paquetes "libsdl2-2.0-0" y "libsdl2-dev"
+# 
+# Ciclo de vida de un programa en C#:
+# Main: Lugar donde se iniciliza lo necesario y se arranca la ejecución.
+# Inicialización de subsistemas (Video, Events y Timer)
+# Game loop: Eventos, Actualización, Renderizado
+# Finalización (Liberación de recursos)

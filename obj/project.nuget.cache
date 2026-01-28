@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "nrwQNzGVmok=",
+  "dgSpecHash": "5k2xns4cdGM=",
   "success": true,
   "projectFilePath": "/home/Jeremias/propio/proyectos/proyecto_engine/proyecto_engine.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/Jeremias/.nuget/packages/sdl2-cs/2.0.0/sdl2-cs.2.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
