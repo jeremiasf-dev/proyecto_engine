@@ -1,10 +1,21 @@
 {
   "version": 2,
-  "dgSpecHash": "5k2xns4cdGM=",
+  "dgSpecHash": "fscsZGjxFuQ=",
   "success": true,
   "projectFilePath": "/home/Jeremias/propio/proyectos/proyecto_engine/proyecto_engine.csproj",
   "expectedPackageFiles": [
-    "/home/Jeremias/.nuget/packages/sdl2-cs/2.0.0/sdl2-cs.2.0.0.nupkg.sha512"
+    "/home/Jeremias/.nuget/packages/opentk/4.9.4/opentk.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.audio.openal/4.9.4/opentk.audio.openal.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.compute/4.9.4/opentk.compute.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.core/4.9.4/opentk.core.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.graphics/4.9.4/opentk.graphics.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.input/4.9.4/opentk.input.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.mathematics/4.9.4/opentk.mathematics.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.redist.glfw/3.4.0.44/opentk.redist.glfw.3.4.0.44.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.windowing.common/4.9.4/opentk.windowing.common.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.windowing.desktop/4.9.4/opentk.windowing.desktop.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/opentk.windowing.graphicslibraryframework/4.9.4/opentk.windowing.graphicslibraryframework.4.9.4.nupkg.sha512",
+    "/home/Jeremias/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

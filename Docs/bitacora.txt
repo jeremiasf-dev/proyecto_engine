@@ -25,3 +25,8 @@
 # Agregado Proportion.cs con el método para hallar la incógnita en una proporcionalidad directa.
 # Agregado tipo Vector2D con (double x, double y) como componentes.
 # Agregados métodos en Vector2D(Suma, resta, multiplicación, longitud/magnitud, normalización, producto punto. 
+# 
+# Aprendiendo geometría...
+# 
+# Agregado: World/Tile.cs, Tilemap.cs, Engine/Graphics/Windows.cs, Input/; solo estructura, resta por hacer
+# Decisión: SDL2 descartado. Elegido OpenTK por ser orientado a C#.

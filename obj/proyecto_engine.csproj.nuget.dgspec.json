@@ -43,9 +43,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "SDL2-CS": {
+            "OpenTK": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[4.9.4, )"
             }
           },
           "imports": [
