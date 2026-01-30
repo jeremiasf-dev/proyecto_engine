@@ -45,3 +45,7 @@
 # Terminado WindowEngine.cs, aprendiendo sobre renderizado para continuar...
 # Llevó una buena cantidad de horas, pero están configurados Render.cs y Shader.cs, con los shaders .vert y .frag.
 # El programa compila, hay un pequeño bug al momento de dibujar el triángulo, pero todo funciona, por ahora no lo voy a tocar hasta mañana  
+# 
+# El bug estaba en cómo se creaban el VBO y VAO y en cómo se inicializaban...
+# Pienso que estaría bueno agregar un modo debug para graficar funciones... más adelante.
+# Ahora, lo siguiente es crear tiles, tilemaps, entidades, y cargar texturas con más capas de abstracción que permitan sencillez.

@@ -9,9 +9,9 @@ namespace Engine.Graphics
 		// Vértices del triángulo
 		float[] vertices = 
 		{
-			 0.5f,  0.5f, 0.0f, //Vértice (vertex) inferior izquierda
-			-0.5f, -0.5f, 0.0f, //Vértice (vertex) inferior derecha
-			-0.5f,  0.5f, 0.0f  //Vértice (vertex) superior
+			-1.0f, -1.0f, 0.0f, //Vértice (vertex) inferior izquierda
+			 1.0f, -1.0f, 0.0f, //Vértice (vertex) inferior derecha
+			 0.0f,  1.0f, 0.0f  //Vértice (vertex) superior
 		};
 	
 		public void Init()
@@ -20,17 +20,12 @@ namespace Engine.Graphics
 			// 	
 			_VertexArrayObject = GL.GenVertexArray();
 			GL.BindVertexArray(_VertexArrayObject);
-			
-			GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
-			GL.EnableVertexAttribArray(0);
 		
 			// VBO
 			// 	Es un array dinámico, guarda los buffers de Open GL
 			_VertexBufferObject = GL.GenBuffer();
-			
-			// Lo bindeo
-			GL.BindBuffer(BufferTarget.ArrayBuffer, _VertexBufferObject);
-			
+			GL.BindBuffer(BufferTarget.ArrayBuffer, _VertexBufferObject); // Lo bindeo
+
 			// Copio los datos del buffer de las vérticas previamente definidas
 			//
 			// GL.BufferData es una funcion diseñada para copiar datos definidos por el usuario
@@ -44,9 +39,11 @@ namespace Engine.Graphics
 			//      > DynamicDraw: los datos que son propensos a cambiar
 			//		> StreamDraw: Los datos cambiarán cada vez que son dibujados
 			//
-			
+
 			GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.StaticDraw);
-		
+			
+			GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
+			GL.EnableVertexAttribArray(0);
 		}
 		
 		public void Draw(Shader shader)
@@ -55,5 +52,16 @@ namespace Engine.Graphics
 			GL.BindVertexArray(_VertexArrayObject);
 			GL.DrawArrays(PrimitiveType.Triangles, 0, 3);	
 		}
+		
+		public void UpdateVertices(float[] newVertices)
+		{
+			// Actualizo el array en C#
+			vertices = newVertices;
+
+			// Vuelvo a subir los datos al VBO
+			GL.BindBuffer(BufferTarget.ArrayBuffer, _VertexBufferObject);
+			GL.BufferData(BufferTarget.ArrayBuffer, vertices.Length * sizeof(float), vertices, BufferUsageHint.DynamicDraw);
+		}
+
 	}
 }

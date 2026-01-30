@@ -45,6 +45,18 @@ namespace Engine.Core
 			{
 				Close();
 			}
+			
+			if (KeyboardState.IsKeyDown(Keys.Space))
+			{
+				float[] rectangulo = 
+				{ 
+					-0.5f, -0.5f, 0.0f,
+					 0.5f, -0.5f, 0.0f,
+					-0.5f,  0.5f, 0.0f
+				};
+
+				render.UpdateVertices(rectangulo);
+			}
 		}
 		
 		// Todo lo que debe inicializarse va en este método 
@@ -52,13 +64,14 @@ namespace Engine.Core
 		{
 			base.OnLoad();
 				
-			shader = new Shader("default.vert", "default.frag");
-			render = new Render();
-			// Cargo el color de la ventana
 			GL.ClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-
-			// Acá va el código 
+			
+			render = new Render();
 			render.Init();
+			
+			shader = new Shader("default.vert", "default.frag");
+
+
 		}
 		
 		//~ // Método para renderizar
