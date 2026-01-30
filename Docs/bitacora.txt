@@ -30,3 +30,14 @@
 # 
 # Agregado: World/Tile.cs, Tilemap.cs, Engine/Graphics/Windows.cs, Input/; solo estructura, resta por hacer
 # Decisión: SDL2 descartado. Elegido OpenTK por ser orientado a C#.
+# Agregado WindowsEngine.cs (reemplazo de Windows.cs) con ventana lista para inicializarse y recibir input por actualización por frame.
+# Ahora toca crear el renderizado, se me ocurre crear clases con colores y funciones para dibujar poligonos según las vértices dadas...
+# ... toca seguir aprendiendo geometría, pero antes, me gustaría renderizar un triángulo y tener un pequeño programa que...
+# ... me permita utilizar el motor como calculadora matemática y física.
+# 	> Utilizar operaciones de Engine.Math.Vector2D para representar vectores en un eje cartesiano 2D.
+#	> Lo mismo que arriba, pero con polígonos, geometría, trigonometría, álgebra lineal y cuadrática
+#
+# Se me está ocurriendo transformar las coordenadas x0,y0 (actualmente situadas en la esquina superior
+# izquierda, hacia el centro de la ventana, y utilizarla como referencia para calcular a partir de allí
+# Cuadrantes y puntos cardinales se originarán desde ahí, además de métodos para transformar vectores y
+# polígonos. Luego se le implementará física y trigonometría sí o sí (en el orden que correspondan).
