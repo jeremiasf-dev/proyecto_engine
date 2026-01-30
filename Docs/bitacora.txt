@@ -41,3 +41,7 @@
 # izquierda, hacia el centro de la ventana, y utilizarla como referencia para calcular a partir de allí
 # Cuadrantes y puntos cardinales se originarán desde ahí, además de métodos para transformar vectores y
 # polígonos. Luego se le implementará física y trigonometría sí o sí (en el orden que correspondan).
+#
+# Terminado WindowEngine.cs, aprendiendo sobre renderizado para continuar...
+# Llevó una buena cantidad de horas, pero están configurados Render.cs y Shader.cs, con los shaders .vert y .frag.
+# El programa compila, hay un pequeño bug al momento de dibujar el triángulo, pero todo funciona, por ahora no lo voy a tocar hasta mañana  

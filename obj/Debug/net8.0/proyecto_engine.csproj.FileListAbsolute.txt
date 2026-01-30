@@ -29,3 +29,5 @@
 /home/Jeremias/propio/proyectos/proyecto_engine/obj/Debug/net8.0/proyecto_engine.pdb
 /home/Jeremias/propio/proyectos/proyecto_engine/obj/Debug/net8.0/proyecto_engine.genruntimeconfig.cache
 /home/Jeremias/propio/proyectos/proyecto_engine/obj/Debug/net8.0/ref/proyecto_engine.dll
+/home/Jeremias/propio/proyectos/proyecto_engine/bin/Debug/net8.0/Engine/Graphics/Shaders/default.frag
+/home/Jeremias/propio/proyectos/proyecto_engine/bin/Debug/net8.0/Engine/Graphics/Shaders/default.vert
